@@ -6,5 +6,5 @@
     
     $h = new HomeController();
     $h->index();
-
+    
 ?>
