@@ -13,7 +13,7 @@
 
         public static function getCon() {
             try{
-                $con = new PDO('mysql:host'.self::$host.';dbname='.self::$name.'', self::$user, self::$pass);
+              $con = new PDO('mysql:host='.self::$host.';dbname='.self::$name.'', self::$user, self::$pass);
             }catch(PDOException $e){
                 echo 'Falha ao conectar'.$e->getMessage();
             }
